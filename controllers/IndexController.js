@@ -9,6 +9,11 @@ module.exports =  function (app) {
     portfolio: function (req, res) {
       res.render('portfolio');
     },
+
+    //Route portfolio/ComunicacaoInterna
+    comunicacaoInterna: function (req, res) {
+      res.render('port_ColmunicacaoInterna');
+    },
   };
   return indexController;
 };

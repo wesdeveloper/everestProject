@@ -1,57 +1,370 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
 nav ul a,
 nav .brand-logo {
-  color: #444;
+    color: #444;
 }
 
 p {
-  line-height: 2rem;
+    line-height: 2rem;
 }
 
 .button-collapse {
-  color: #26a69a;
+    color: #26a69a;
 }
 
 .parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, .9);
 }
-  .parallax-container .section {
+
+.parallax-container .section {
     width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+
+    #index-banner .section {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
 }
 
 .icon-block {
-  padding: 0 15px;
+    padding: 0 15px;
 }
+
 .icon-block .material-icons {
-  font-size: inherit;
+    font-size: inherit;
 }
 
 footer.page-footer {
-  margin: 0;
+    margin: 0;
+}
+
+/* meu css */
+body {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #535353;
+    background-image: url(images/bg.gif);
+    background-attachment: fixed;
+    margin: 0 auto;
+}
+
+table, td, tr {
+    font-size: 11px;
+}
+
+.blue_text {
+    color: #2072ab;
+}
+
+.blue_text1 {
+    color: #2072ab;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.input {
+    background-color: #f2f2f2;
+    border: solid 1px #868686;
+    height: 17px;
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+.input1 {
+    background-color: #f2f2f2;
+    border: solid 1px #868686;
+    height: 17px;
+    width: 150px;
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+.input2 {
+    background-color: #f2f2f2;
+    border: solid 1px #868686;
+    width: 370px;
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+.input3 {
+    background-color: #f2f2f2;
+    border: solid 1px #868686;
+    width: 170px;
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+.menua:link {
+    color: #2072ab;
+    text-decoration: none;
+}
+
+.menua:visited {
+    color: #2072ab;
+    text-decoration: none;
+}
+
+.menua:hover {
+    color: #000;
+    text-decoration: none;
+    background-color: #f9c636;
+    padding-top: 66px;
+}
+
+.menua:active {
+    color: #000;
+    text-decoration: none;
+}
+
+.ativo:link {
+    color: #000;
+    text-decoration: none;
+    background-color: #f9c636;
+    padding-top: 66px;
+}
+
+.ativo:visited {
+    color: #000;
+    text-decoration: none;
+    background-color: #f9c636;
+    padding-top: 66px;
+}
+
+.ativo:hover {
+    color: #000;
+    text-decoration: none;
+    background-color: #f9c636;
+    padding-top: 66px;
+}
+
+.ativo:active {
+    color: #000;
+    text-decoration: none;
+    background-color: #f9c636;
+    padding-top: 66px;
+}
+
+.a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+#topo {
+    width: 1000px;
+    height: 190px;
+    float: left;
+}
+
+#logo {
+    width: 200px;
+    height: 190px;
+    float: left;
+}
+
+#cabecalho {
+    width: 800px;
+    height: 190px;
+    float: left;
+    background-color: #FFFFFF;
+}
+
+#menu {
+    width: 800px;
+    height: 88px;
+    font-size: 12px;
+    float: left;
+}
+
+#titulo {
+    float: left;
+    width: 800px;
+    height: 52px;
+}
+
+#miolo {
+    width: 1000px;
+    height: 357px;
+    float: left;
+}
+
+#miolo2 {
+    width: 1000px;
+    height: 100%;
+    float: left;
+    background-color: #e8f1f6;
+}
+
+#miolo3 {
+    width: 1000px;
+    float: left;
+    background-color: #fff;
+}
+
+#miolo_fixo {
+    width: 200px;
+    height: 357px;
+    float: left;
+    background-color: #d4e4ee;
+}
+
+#conteudo {
+    float: left;
+    background-color: #FFFFFF;
+    height: 357px;
+    width: 800px;
+    font-size: 11px;
+}
+
+#conteudo1 {
+    float: left;
+    background-color: #FFFFFF;
+    width: 800px;
+    height: 100%;
+    font-size: 11px;
+}
+
+#conteudo2 {
+    float: left;
+    background-color: #FFFFFF;
+    width: 800px;
+    height: 100%;
+    font-size: 11px;
+    background-color: #fff;
+}
+
+#rodape {
+    width: 1000px;
+    height: 48px;
+    float: left;
+    background-color: #f9c636;
+    font-size: 12px;
+    font-weight: bold;
+    color: #2072ab;
+}
+
+
+.blueE {
+    background-color: #2072AB !important;
+}
+
+.blueE-text {
+    color: #2072AB !important;
+}
+
+.blueE.lighten-5 {
+    background-color: #42A5F5 !important;
+}
+
+.blueE-text.text-lighten-5 {
+    color: #42A5F5 !important;
+}
+
+.blueE.lighten-4 {
+    background-color: #64B5F6 !important;
+}
+
+.blueE-text.text-lighten-4 {
+    color: #64B5F6 !important;
+}
+
+.blueE.lighten-3 {
+    background-color: #90CAF9 !important;
+}
+
+.blueE-text.text-lighten-3 {
+    color: #90CAF9 !important;
+}
+
+.blueE.lighten-2 {
+    background-color: #BBDEFB !important;
+}
+
+.blueE-text.text-lighten-2 {
+    color: #BBDEFB !important;
+}
+
+.blueE.lighten-1 {
+    background-color: #E3F2FD !important;
+}
+
+.blueE-text.text-lighten-1 {
+    color: #E3F2FD !important;
+}
+
+.blueE.darken-1 {
+    background-color: #1E88E5 !important;
+}
+
+.blueE-text.text-darken-1 {
+    color: #1E88E5 !important;
+}
+
+.blueE.darken-2 {
+    background-color: #1976D2 !important;
+}
+
+.blueE-text.text-darken-2 {
+    color: #1976D2 !important;
+}
+
+.blueE.darken-3 {
+    background-color: #1565C0 !important;
+}
+
+.blueE-text.text-darken-3 {
+    color: #1565C0 !important;
+}
+
+.blueE.darken-4 {
+    background-color: #0D47A1 !important;
+}
+
+.blueE-text.text-darken-4 {
+    color: #0D47A1 !important;
+}
+
+.blueE.accent-1 {
+    background-color: #82B1FF !important;
+}
+
+.blueE-text.text-accent-1 {
+    color: #82B1FF !important;
+}
+
+.blueE.accent-2 {
+    background-color: #448AFF !important;
+}
+
+.blueE-text.text-accent-2 {
+    color: #448AFF !important;
+}
+
+.blueE.accent-3 {
+    background-color: #2979FF !important;
+}
+
+.blueE-text.text-accent-3 {
+    color: #2979FF !important;
+}
+
+.blueE.accent-4 {
+    background-color: #2962FF !important;
+}
+
+.blueE-text.text-accent-4 {
+    color: #2962FF !important;
 }
