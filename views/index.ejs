@@ -33,55 +33,57 @@
 </head>
 
 <body>
-<nav class="white" role="navigation">
+<a class="btn-floating btn-large waves-effect waves-light head topo" href="#"><i class="material-icons">keyboard_arrow_up</i></a>
+
+<nav class="head" role="navigation">
     <div class="nav-wrapper container">
         <a id="logo-container" href="#" class="brand-logo">
-            <img src="../images/logo.gif" alt="Logo">
+            <img src="../public/images/logo.gif" alt="Logo">
         </a>
 
         <ul class="right hide-on-med-and-down">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">A Empresa</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Cases</a></li>
-            <li><a href="http://www.kombo.com.br/curriculo/?cid=MjY4MC0w">Trabalhe Conosco</a></li>
-            <li><a href="#">Fale Conosco</a></li>
+            <li><a class="white-text" href="#">Home</a></li>
+            <li><a class="white-text" href="#empresa">A Empresa</a></li>
+            <li><a class="white-text" href="#diretrizes">Nossas Diretrizes</a></li>
+            <li><a class="white-text" href="#">Portfolio</a></li>
+            <li><a class="white-text" href="http://www.kombo.com.br/curriculo/?cid=MjY4MC0w">Trabalhe Conosco</a></li>
+            <li><a class="white-text" href="#contato">Fale Conosco</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
 
-            <nav class="white" role="navigation">
-              <span class="black-text" style="font-size:20px; margin-left: 10px;">MENU</span>
+            <nav class="head" role="navigation">
+                <span class="blueE-text" style="font-size:20px; margin-left: 10px;">MENU</span>
             </nav>
             <li><a href="#">Home</a></li>
-            <li><a href="#">A Empresa</a></li>
+            <li><a href="#empresa">A Empresa</a></li>
+            <li><a href="#diretrizes">Nossas Diretrizes</a></li>
             <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Cases</a></li>
             <li><a href="http://www.kombo.com.br/curriculo/?cid=MjY4MC0w">Trabalhe Conosco</a></li>
-            <li><a href="#">Fale Conosco</a></li>
+            <li><a href="#contato">Fale Conosco</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
 </nav>
 
-<div id="index-banner" class="parallax-container">
+<div id="index-banner" class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
         <div class="container">
-            <br><br>
-            <h1 class="header center blueE-text text-lighten-5">Everest</h1>
             <div class="row center">
-                <h5 class="header col s12 light">Soluções em Comunicação</h5>
+                <h5 class="header col s12 light shadow">A qualidade do nosso produto proporciona a imagem que sua
+                    empresa
+                    almeja.</h5>
             </div>
         </div>
     </div>
-    <div class="parallax"><img src="images/background/background1.jpg" alt="Comunicação Externa MRV">
+    <div class="parallax img-responsive"><img src="images/background/background1.jpg" alt="Comunicação Externa MRV">
     </div>
 </div>
 
-<div class="container">
+<div class="container" id="empresa">
     <div class="section">
         <div class="row">
-            <div class="col s12 center">
+            <div class="col s7 center">
                 <h3><i class="mdi-content-send brown-text"></i></h3>
                 <h4>A empresa</h4>
                 <p class="left-align light">Criada em 2003 direcionada para o dinâmico mercado de comunicação visual, a
@@ -90,6 +92,15 @@
                     estrutura, a experiência de profissionais qualificados e faz uso de tecnologia de ponta, estando
                     sempre apta a atender seus clientes de maneira diferenciada, criando soluções sob medida.</p>
             </div>
+            <div class="col s5">
+                <div class="carousel">
+                    <a class="carousel-item" href="#one!"><img src="images/Empresa/acabamento.jpg"></a>
+                    <a class="carousel-item" href="#two!"><img src="images/Empresa/impressao.jpg"></a>
+                    <a class="carousel-item" href="#three!"><img src="images/Empresa/pintura.jpg"></a>
+                    <a class="carousel-item" href="#four!"><img src="images/Empresa/serralheria.jpg"></a>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
@@ -99,13 +110,8 @@
     <div class="section no-pad-bot">
         <div class="container">
             <div class="row center">
-                <h5 class="header col s12 light">Conheça o nosso portfólio de produtos</h5>
-
-                <div class="row center">
-                    <a href="portfolio" id="download-button"
-                       class="btn-large waves-effect waves-light blueE-text">Portfolio</a>
-                </div>
-                <br><br>
+                <h5 class="header col s12 light shadow">Fachada em alumínio composto. Inovação, design e
+                    sofisticação.</h5>
             </div>
         </div>
     </div>
@@ -113,7 +119,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container" id="diretrizes">
     <div class="section">
 
         <div class="row">
@@ -126,8 +132,10 @@
                         <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
                         <h5 class="center">Nossa Missão</h5>
 
-                        <p class="light">Fornecer produtos e serviços de alto padrão de qualidade. Atuando com flexibilidade
-                            e velocidade de resposta, para maximizar a satisfação do cliente. Criar projetos e soluções que
+                        <p class="light">Fornecer produtos e serviços de alto padrão de qualidade. Atuando com
+                            flexibilidade
+                            e velocidade de resposta, para maximizar a satisfação do cliente. Criar projetos e soluções
+                            que
                             atendam da melhor forma às necessidades e expectativas do mesmo.</p>
                     </div>
                 </div>
@@ -137,7 +145,8 @@
                         <h2 class="center brown-text"><i class="material-icons">group</i></h2>
                         <h5 class="center">Nossa Visão</h5>
 
-                        <p class="light">Sermos os provedores das melhores soluções em comunicação visual, com competência e
+                        <p class="light">Sermos os provedores das melhores soluções em comunicação visual, com
+                            competência e
                             excelência de produtos e serviços. Ser guiada por padrões éticos, e respeitando ao meio
                             ambiente, trabalhando de maneira sustentável.</p>
                     </div>
@@ -161,7 +170,7 @@
     <div class="section no-pad-bot">
         <div class="container">
             <div class="row center">
-                <h5 class="header col s12 light">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                <h5 class="header col s12 light shadow">Destaque-se dos demais</h5>
             </div>
         </div>
     </div>
@@ -169,7 +178,7 @@
     </div>
 </div>
 
-<footer class="page-footer blueE">
+<footer class="page-footer blueE" id="contato">
     <div class="container">
         <div class="row">
             <div class="col l4 s12">
@@ -182,7 +191,7 @@
             <div class="col l5 s12">
                 <h5 class="white-text">Como Chegar</h5>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.802591203745!2d-44.01394468551712!3d-19.890555986625852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa696ada17339bd%3A0xf2e82c62ee00a0e8!2sEverest+Signs+Solu%C3%A7%C3%B5es+em+Comunica%C3%A7%C3%A3o+Visual!5e0!3m2!1spt-BR!2sbr!4v1477955702713"
-                        width="375" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        width="350" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="col l3 s12">
                 <h5 class="white-text">Contatos</h5>
@@ -210,8 +219,6 @@
                     <li>
                         <strong style="font-size:18px;" class="white-text">tel: 3465-2800</strong>
                     </li>
-
-
                 </ul>
             </div>
         </div>
@@ -223,11 +230,15 @@
     </div>
 </footer>
 
-
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.carousel').carousel();
+    });
+</script>
 
 </body>
 </html>

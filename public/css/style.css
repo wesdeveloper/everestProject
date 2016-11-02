@@ -1,5 +1,32 @@
-nav ul a,
-nav .brand-logo {
+/* MEU CSS */
+
+.head {
+    background-color: #F9C636;
+}
+
+.shadow {
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.topo {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    margin-bottom: 8px;
+    margin-right: 6px;
+}
+
+.img-responsive {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+
+nav ul a:hover {
+    background-color: #0b82b9;
+}
+
+nav ul a, nav .brand-logo {
     color: #444;
 }
 
@@ -51,7 +78,7 @@ footer.page-footer {
     margin: 0;
 }
 
-/* meu css */
+/* CSS ANTIGO EVEREST
 body {
     font-family: Tahoma;
     font-size: 11px;
@@ -255,8 +282,7 @@ table, td, tr {
     font-weight: bold;
     color: #2072ab;
 }
-
-
+*/
 .blueE {
     background-color: #2072AB !important;
 }
