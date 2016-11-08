@@ -66,24 +66,22 @@
     </div>
 </nav>
 
-<div id="index-banner" class="parallax-container valign-wrapper">
+<div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
         <div class="container">
             <div class="row center">
                 <h5 class="header col s12 light shadow">A qualidade do nosso produto proporciona a imagem que sua
-                    empresa
-                    almeja.</h5>
+                    empresa almeja.</h5>
             </div>
         </div>
     </div>
-    <div class="parallax img-responsive"><img src="images/background/background1.jpg" alt="Comunicação Externa MRV">
-    </div>
+    <div class="parallax"><img src="images/background/Home/background1.jpg" alt="MRV"></div>
 </div>
 
 <div class="container" id="empresa">
     <div class="section">
         <div class="row">
-            <div class="col s7 center">
+            <div class="col s12 m7 center">
                 <h3><i class="mdi-content-send brown-text"></i></h3>
                 <h4>A empresa</h4>
                 <p class="left-align light">Criada em 2003 direcionada para o dinâmico mercado de comunicação visual, a
@@ -92,7 +90,7 @@
                     estrutura, a experiência de profissionais qualificados e faz uso de tecnologia de ponta, estando
                     sempre apta a atender seus clientes de maneira diferenciada, criando soluções sob medida.</p>
             </div>
-            <div class="col s5">
+            <div class="col s12 m5">
                 <div class="carousel">
                     <a class="carousel-item" href="#one!"><img src="images/Empresa/acabamento.jpg"></a>
                     <a class="carousel-item" href="#two!"><img src="images/Empresa/impressao.jpg"></a>
@@ -115,7 +113,7 @@
             </div>
         </div>
     </div>
-    <div class="parallax"><img src="images/background/background2.jpg" alt="Moveis Sao Geraldo">
+    <div class="parallax"><img src="images/background/Home/background2.jpg" alt="Moveis Sao Geraldo">
     </div>
 </div>
 
@@ -174,7 +172,7 @@
             </div>
         </div>
     </div>
-    <div class="parallax"><img src="images/background/background3.jpg" alt="Letra Caixa Odontologia">
+    <div class="parallax"><img src="images/background/Home/background3.jpg" alt="Letra Caixa Odontologia">
     </div>
 </div>
 
@@ -191,7 +189,7 @@
             <div class="col l5 s12">
                 <h5 class="white-text">Como Chegar</h5>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.802591203745!2d-44.01394468551712!3d-19.890555986625852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa696ada17339bd%3A0xf2e82c62ee00a0e8!2sEverest+Signs+Solu%C3%A7%C3%B5es+em+Comunica%C3%A7%C3%A3o+Visual!5e0!3m2!1spt-BR!2sbr!4v1477955702713"
-                        width="350" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        width="280" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="col l3 s12">
                 <h5 class="white-text">Contatos</h5>
@@ -236,7 +234,9 @@
 <script src="js/init.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('.carousel').carousel();
+        $('.carousel').carousel({
+            time_constant: 20
+        });
     });
 </script>
 

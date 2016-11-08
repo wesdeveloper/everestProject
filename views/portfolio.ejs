@@ -29,40 +29,55 @@
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="public/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="public/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 
 <body>
+<a class="btn-floating btn-large waves-effect waves-light head topo" href="#"><i class="material-icons">keyboard_arrow_up</i></a>
 
 <!--   Menu   -->
-<nav class="white" role="navigation">
+<nav class="head" role="navigation">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">Logo</a>
+        <a id="logo-container" href="#" class="brand-logo">
+            <img src="images/logo.gif" alt="Logo">
+        </a>
+
         <ul class="right hide-on-med-and-down">
-            <li><a href="#">Navbar Link</a></li>
+            <li><a class="white-text" href="#">Home</a></li>
+            <li><a class="white-text" href="#empresa">A Empresa</a></li>
+            <li><a class="white-text" href="#diretrizes">Nossas Diretrizes</a></li>
+            <li><a class="white-text" href="#">Portfolio</a></li>
+            <li><a class="white-text" href="http://www.kombo.com.br/curriculo/?cid=MjY4MC0w">Trabalhe Conosco</a></li>
+            <li><a class="white-text" href="#contato">Fale Conosco</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-            <li><a href="#">Navbar Link</a></li>
+
+            <nav class="head" role="navigation">
+                <span class="blueE-text" style="font-size:20px; margin-left: 10px;">MENU</span>
+            </nav>
+            <li><a href="#">Home</a></li>
+            <li><a href="#empresa">A Empresa</a></li>
+            <li><a href="#diretrizes">Nossas Diretrizes</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="http://www.kombo.com.br/curriculo/?cid=MjY4MC0w">Trabalhe Conosco</a></li>
+            <li><a href="#contato">Fale Conosco</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
 </nav>
 
 <!--   Banner1   -->
-<div id="index-banner" class="parallax-container">
+<div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
         <div class="container">
-            <br><br>
-            <h1 class="header center teal-text text-lighten-2">Veja nosso portfolio</h1>
             <div class="row center">
-                <h5 class="header col s12 light">Trabalhamos agregando valor a seu negocio</h5>
+                <h3 class="header col s12 light shadow">Portfólio</h3>
             </div>
         </div>
     </div>
-    <div class="parallax"><img src="public/images/background/background1.jpg" alt="Unsplashed background img 1">
-    </div>
+    <div class="parallax"><img src="images/background/Home/background1.jpg" alt="MRV"></div>
 </div>
 
 <!--   Container   -->
@@ -74,8 +89,8 @@
             <div class="col s12 m4">
                 <div class="card">
                     <div class="card-image">
-                        <img src="public/images/imagePortfolio/comunicacaoInterna.gif">
-                        <span class="card-title">Comunicação Interna</span>
+                        <img src="images/imagePortfolio/ComunicacaoInterna/comunicacaoInterna.gif">
+                        <span class="card-title shadow">Comunicação Interna</span>
                     </div>
                     <div class="card-content">
                         <p>I am a very simple card. I am good at containing small bits of information.
@@ -91,8 +106,8 @@
             <div class="col s12 m4">
                 <div class="card">
                     <div class="card-image">
-                        <img src="public/images/imagePortfolio/envelopamentoDeFrotas.gif">
-                        <span class="card-title">Envelopamento de Frotas</span>
+                        <img src="images/imagePortfolio/Envelopamento/envelopamentoDeFrotas.gif">
+                        <span class="card-title shadow">Envelopamento</span>
                     </div>
                     <div class="card-content">
                         <p>I am a very simple card. I am good at containing small bits of information.
@@ -108,8 +123,8 @@
             <div class="col s12 m4">
                 <div class="card">
                     <div class="card-image">
-                        <img src="public/images/imagePortfolio/placas.gif">
-                        <span class="card-title">Placas</span>
+                        <img src="images/imagePortfolio/Placas/placa.gif">
+                        <span class="card-title shadow">Placas</span>
                     </div>
                     <div class="card-content">
                         <p>I am a very simple card. I am good at containing small bits of information.
@@ -123,10 +138,10 @@
 
             <!--   Card 04   -->
             <div class="col s12 m4">
-                <div class="card horizontal">
+                <div class="card">
                     <div class="card-image">
-                        <img src="public/images/imagePortfolio/letraCaixa.gif">
-                        <span class="card-title">Letra Caixa</span>
+                        <img src="images/imagePortfolio/LetraCaixa/letraCaixa.gif">
+                        <span class="card-title shadow">Letra Caixa</span>
 
                     </div>
                     <div class="card-stacked">
@@ -142,10 +157,10 @@
 
             <!--   Card 05   -->
             <div class="col s12 m4">
-                <div class="card horizontal">
+                <div class="card">
                     <div class="card-image">
-                        <img src="public/images/imagePortfolio/fachada.gif">
-                        <span class="card-title">Fachada</span>
+                        <img src="images/imagePortfolio/Fachada/fachada.gif">
+                        <span class="card-title shadow">Fachada</span>
 
                     </div>
                     <div class="card-stacked">
@@ -161,10 +176,10 @@
 
             <!--   Card 06   -->
             <div class="col s12 m4">
-                <div class="card horizontal">
+                <div class="card">
                     <div class="card-image">
-                        <img src="public/images/imagePortfolio/comunicacaoExterna.gif">
-                        <span class="card-title">Comunicação Externa</span>
+                        <img src="images/imagePortfolio/ComunicacaoExterna/comunicacaoExterna.gif">
+                        <span class="card-title shadow">Comunicação Externa</span>
 
                     </div>
                     <div class="card-stacked">
@@ -182,48 +197,62 @@
 </div>
 
 <!--   Footer   -->
-<footer class="page-footer teal">
+<footer class="page-footer blueE" id="contato">
     <div class="container">
         <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Company Bio</h5>
-                <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's
-                    our full time job. Any amount would help support and continue development on this project and is
-                    greatly appreciated.</p>
+            <div class="col l4 s12">
+                <h5 class="white-text">Nosso Endereço</h5>
+                <p class="grey-text text-lighten-4">Rua São Bernardo, 100 - Serrano | Belo Horizonte | MG | CEP:
+                    30881-4</p>
 
 
             </div>
-            <div class="col l3 s12">
-                <h5 class="white-text">Settings</h5>
-                <ul>
-                    <li><a class="white-text" href="#!">Link 1</a></li>
-                    <li><a class="white-text" href="#!">Link 2</a></li>
-                    <li><a class="white-text" href="#!">Link 3</a></li>
-                    <li><a class="white-text" href="#!">Link 4</a></li>
-                </ul>
+            <div class="col l5 s12">
+                <h5 class="white-text">Como Chegar</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.802591203745!2d-44.01394468551712!3d-19.890555986625852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa696ada17339bd%3A0xf2e82c62ee00a0e8!2sEverest+Signs+Solu%C3%A7%C3%B5es+em+Comunica%C3%A7%C3%A3o+Visual!5e0!3m2!1spt-BR!2sbr!4v1477955702713"
+                        width="280" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="col l3 s12">
-                <h5 class="white-text">Connect</h5>
+                <h5 class="white-text">Contatos</h5>
                 <ul>
-                    <li><a class="white-text" href="#!">Link 1</a></li>
-                    <li><a class="white-text" href="#!">Link 2</a></li>
-                    <li><a class="white-text" href="#!">Link 3</a></li>
-                    <li><a class="white-text" href="#!">Link 4</a></li>
+                    <li>
+                        <strong class="white-text">DIREÇÃO - Junior</strong>
+                        <a href="mailto:junior@everestsigns.com.br" class="white-text">junior@everestsigns.com.br</a>
+                    </li>
+                    <br>
+                    <li>
+                        <strong class="white-text">FINANCEIRO - Jane</strong><br>
+                        <a href="mailto:financeiro@everestsigns.com.br" class="white-text">financeiro@everestsigns.com.br</a>
+                    </li>
+                    <br>
+                    <li>
+                        <strong class="white-text">COMPRAS</strong><br>
+                        <a href="mailto:compras@everestsigns.com.br" class="white-text">compras@everestsigns.com.br</a>
+                    </li>
+                    <br>
+                    <li>
+                        <strong class="white-text">VENDAS - Dennis</strong>
+                        <a href="mailto:vendas@everestsigns.com.br" class="white-text">vendas@everestsigns.com.br</a>
+                    </li>
+                    <br>
+                    <li>
+                        <strong style="font-size:18px;" class="white-text">tel: 3465-2800</strong>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="footer-copyright">
         <div class="container">
-            Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            Made by <a class="brown-text text-lighten-3" href="#">Nosso Nome</a>
         </div>
     </div>
 </footer>
 
 <!--  Scripts   -->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="public/js/materialize.js"></script>
-<script src="public/js/init.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
 
 </body>
 </html>
