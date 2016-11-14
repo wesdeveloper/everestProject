@@ -25,30 +25,32 @@
     <meta name="copyright" content="Everest Signs - Soluções em Comunicação"/>
     <meta name="abstract"
           content="brasil, minas gerais, belo horizonte, bairro serrano, Temas ligados a comunicação visual, confecção de placas, adesivos de vinil, lonas impressas em tinta a base de solvente, tinta automotiva para letras em alumínio e aço, revitalização de fachadas com alumínio composto ACM, envelopamento de veículos, impressão em grandes formatos,lona, vinil, tinta, solvente, envelopamento, veículos, frota, adesivo, placas, comunicação visual, vinil de recorte, faca, ploter, criação de identidade visual, impressão em grandes formatos, scitex, roland, compact, recort"/>
-    <meta name='theme-color' content='#F9C636'/>
 
     <!-- CSS  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 
 <body>
-<a class="btn-floating btn-large waves-effect waves-light head topo" href="#"><i class="material-icons">keyboard_arrow_up</i></a>
+<a class="btn-floating btn-large waves-effect waves-light head topo scroll" href="#home"><i class="material-icons">keyboard_arrow_up</i></a>
 
-<nav class="head" role="navigation">
+<nav class="head" id="home" role="navigation">
     <div class="nav-wrapper container">
         <a id="logo-container" href="#" class="brand-logo">
             <img src="images/logo.gif" alt="Logo">
         </a>
 
         <ul class="right hide-on-med-and-down">
-            <li><a class="white-text" href="#">Home</a></li>
-            <li><a class="white-text" href="#empresa">A Empresa</a></li>
-            <li><a class="white-text" href="#diretrizes">Nossas Diretrizes</a></li>
-            <li><a class="white-text" href="portfolio">Portfolio</a></li>
-            <li><a class="white-text" href="http://www.kombo.com.br/curriculo/?cid=MjY4MC0w">Trabalhe Conosco</a></li>
-            <li><a class="white-text" href="#contato">Fale Conosco</a></li>
+            <li><a class="white-text scroll" href="#">Home</a></li>
+            <li><a class="white-text scroll" href="#empresa">A Empresa</a></li>
+            <li><a class="white-text scroll" href="#diretrizes">Nossas Diretrizes</a></li>
+            <li><a class="white-text scroll" href="#">Portfolio</a></li>
+            <li><a class="white-text scroll" href="http://www.kombo.com.br/curriculo/?cid=MjY4MC0w">Trabalhe Conosco</a>
+            </li>
+            <li><a class="white-text scroll" href="#contato">Fale Conosco</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
@@ -56,12 +58,12 @@
             <nav class="head" role="navigation">
                 <span class="blueE-text" style="font-size:20px; margin-left: 10px;">MENU</span>
             </nav>
-            <li><a href="#">Home</a></li>
-            <li><a href="#empresa">A Empresa</a></li>
-            <li><a href="#diretrizes">Nossas Diretrizes</a></li>
-            <li><a href="portfolio">Portfolio</a></li>
-            <li><a href="http://www.kombo.com.br/curriculo/?cid=MjY4MC0w">Trabalhe Conosco</a></li>
-            <li><a href="#contato">Fale Conosco</a></li>
+            <li><a class="scroll" href="#">Home</a></li>
+            <li><a class="scroll" href="#empresa">A Empresa</a></li>
+            <li><a class="scroll" href="#diretrizes">Nossas Diretrizes</a></li>
+            <li><a class="scroll" href="#">Portfolio</a></li>
+            <li><a class="scroll" href="http://www.kombo.com.br/curriculo/?cid=MjY4MC0w">Trabalhe Conosco</a></li>
+            <li><a class="scroll" href="#contato">Fale Conosco</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -84,26 +86,109 @@
         <div class="row">
             <div class="col s12 m7 center">
                 <h3><i class="mdi-content-send brown-text"></i></h3>
-                <h4>A empresa</h4>
+                <h4>A Empresa</h4>
                 <p class="left-align light">Criada em 2003 direcionada para o dinâmico mercado de comunicação visual, a
                     Everest Soluções em Comunicação, é uma empresa pautada na renovação. Com foco na qualidade dos seus
                     produtos, tem se destacado pelo dinamismo e excelência nos prazos de entrega. A Everest tem em sua
                     estrutura, a experiência de profissionais qualificados e faz uso de tecnologia de ponta, estando
                     sempre apta a atender seus clientes de maneira diferenciada, criando soluções sob medida.</p>
             </div>
-            <div class="col s12 m5">
-                <div class="carousel">
-                    <a class="carousel-item" href="#one!"><img src="images/Empresa/acabamento.jpg"></a>
-                    <a class="carousel-item" href="#two!"><img src="images/Empresa/impressao.jpg"></a>
-                    <a class="carousel-item" href="#three!"><img src="images/Empresa/pintura.jpg"></a>
-                    <a class="carousel-item" href="#four!"><img src="images/Empresa/serralheria.jpg"></a>
+
+            <div class="col s12 m5 center">
+                <div id="carouselSmall1" style="height: 200px; width: 330px; top: 70px"
+                     class="carousel slide hide-on-small-and-down"
+                     data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselSmall1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselSmall1" data-slide-to="1"></li>
+                        <li data-target="#carouselSmall1" data-slide-to="2"></li>
+                        <li data-target="#carouselSmall1" data-slide-to="3"></li>
+                        <li data-target="#carouselSmall1" data-slide-to="4"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="../public/images/Empresa/acabamento.jpg" alt="...">
+                        </div>
+
+                        <div class="item">
+                            <img src="images/Empresa/impressao.jpg" alt="...">
+                        </div>
+
+                        <div class="item">
+                            <img src="images/Empresa/pintura.jpg" alt="...">
+                        </div>
+
+                        <div class="item">
+                            <img src="images/Empresa/sorveteria.jpg" alt="...">
+                        </div>
+
+                        <div class="item">
+                            <img src="images/Empresa/serralheria.jpg" alt="...">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carouselSmall1" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carouselSmall1" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <div id="carouselSmall" style="height: 200px" class="carousel slide hide-on-med-and-up show-on-small"
+                     data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselSmall" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselSmall" data-slide-to="1"></li>
+                        <li data-target="#carouselSmall" data-slide-to="2"></li>
+                        <li data-target="#carouselSmall" data-slide-to="3"></li>
+                        <li data-target="#carouselSmall" data-slide-to="4"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="images/Empresa/acabamento.jpg" alt="...">
+                        </div>
+
+                        <div class="item">
+                            <img src="images/Empresa/impressao.jpg" alt="...">
+                        </div>
+
+                        <div class="item">
+                            <img src="images/Empresa/pintura.jpg" alt="...">
+                        </div>
+
+                        <div class="item">
+                            <img src="images/Empresa/sorveteria.jpg" alt="...">
+                        </div>
+
+                        <div class="item">
+                            <img src="images/Empresa/serralheria.jpg" alt="...">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carouselSmall" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carouselSmall" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
-
 
 <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -120,7 +205,6 @@
 
 <div class="container" id="diretrizes">
     <div class="section">
-
         <div class="row">
             <div class="col s12 center">
                 <h3><i class="mdi-content-send brown-text"></i></h3>
@@ -132,10 +216,10 @@
                         <h5 class="center">Nossa Missão</h5>
 
                         <p class="light">Fornecer produtos e serviços de alto padrão de qualidade. Atuando com
-                            flexibilidade
-                            e velocidade de resposta, para maximizar a satisfação do cliente. Criar projetos e soluções
-                            que
-                            atendam da melhor forma às necessidades e expectativas do mesmo.</p>
+                            flexibilidade e velocidade de resposta, para maximizar a satisfação do cliente.
+                            Criar projetos e soluções que atendam da melhor forma às necessidades e expectativas do
+                            mesmo.
+                        </p>
                     </div>
                 </div>
 
@@ -145,9 +229,9 @@
                         <h5 class="center">Nossa Visão</h5>
 
                         <p class="light">Sermos os provedores das melhores soluções em comunicação visual, com
-                            competência e
-                            excelência de produtos e serviços. Ser guiada por padrões éticos, e respeitando ao meio
-                            ambiente, trabalhando de maneira sustentável.</p>
+                            competência e excelência de produtos e serviços. Ser guiada por padrões éticos, e
+                            respeitando ao meio ambiente, trabalhando de maneira sustentável.
+                        </p>
                     </div>
                 </div>
 
@@ -163,7 +247,6 @@
         </div>
     </div>
 </div>
-
 
 <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -182,10 +265,8 @@
         <div class="row">
             <div class="col l4 s12">
                 <h5 class="white-text">Nosso Endereço</h5>
-                <p class="grey-text text-lighten-4">Rua São Bernardo, 100 - Serrano | Belo Horizonte | MG | CEP:
-                    30881-4</p>
-
-
+                <p class="grey-text text-lighten-4">
+                    Rua São Bernardo, 100 - Serrano | <br> Belo Horizonte | MG | <br> CEP: 30881-4 </p>
             </div>
             <div class="col l5 s12">
                 <h5 class="white-text">Como Chegar</h5>
@@ -216,7 +297,7 @@
                     </li>
                     <br>
                     <li>
-                        <strong style="font-size:18px;" class="white-text">tel: 3465-2800</strong>
+                        <strong style="font-size:18px;" class="white-text">Tel: 3465-2800</strong>
                     </li>
                 </ul>
             </div>
@@ -233,13 +314,18 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('.carousel').carousel({
-            time_constant: 20
-        });
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script>
+    var $doc = $('html, body');
+    $('.scroll').click(function () {
+        $doc.animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+        return false;
     });
 </script>
-
 </body>
 </html>
