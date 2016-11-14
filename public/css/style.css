@@ -193,3 +193,32 @@ footer.page-footer {
 .m-b {
     margin-bottom: 50px;
 }
+
+/* jQuery lightBox plugin - Gallery style */
+#gallery {
+    margin-left: -38px;
+    text-decoration: none;
+}
+
+#gallery ul {
+    list-style: none;
+}
+
+#gallery ul li {
+    display: inline;
+}
+
+#gallery ul img {
+    border: 5px solid #2072ab;
+    border-width: 5px
+}
+
+#gallery ul a:hover img {
+    border: 5px solid #055185;
+    border-width: 5px;
+    color: #fff;
+}
+
+#gallery ul a:hover {
+    color: #fff;
+}
