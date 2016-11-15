@@ -5,6 +5,10 @@ module.exports =  function (app) {
       res.render('index');
     },
 
+    cases:function (req, res) {
+      res.render('antesDepois');
+    },
+    
     //Route portfolio
     portfolio: function (req, res) {
       res.render('portfolio');
