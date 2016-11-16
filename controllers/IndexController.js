@@ -8,11 +8,11 @@ module.exports =  function (app) {
     cases:function (req, res) {
       res.render('antesDepois');
     },
-    
+
     //Route portfolio
-    portfolio: function (req, res) {
-      res.render('portfolio');
-    },
+    //portfolio: function (req, res) {
+     // res.render('portfolio');
+    //},
 
     ComunicacaoInterna: function (req, res) {
       res.render('port_ComunicacaoInterna');
