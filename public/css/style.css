@@ -279,3 +279,7 @@ ul#demo-block2 li a {
     color:#eee;
     font-weight:bold;
 }
+
+.sliderW {
+    max-width: 100%;
+    height: auto; }

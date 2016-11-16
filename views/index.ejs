@@ -33,7 +33,6 @@
     <meta name='theme-color' content='#F9C636'/>
 
     <!-- CSS  -->
-    <link href="css/foundation.css" rel="stylesheet" type="text/css"/>
     <link href="css/twentytwenty.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -66,18 +65,18 @@
             <nav class="head" role="navigation">
                 <span class="blueE-text" style="font-size:20px; margin-left: 10px;">MENU</span>
             </nav>
-            <li><a class="scroll" href="#">Home</a></li>
-            <li><a class="scroll" href="#portfolio">Soluções e Serviços</a></li>
-            <li><a class="scroll" href="#antesDepois">Antes e Depois</a></li>
-            <li><a class="scroll" href="#empresa">A Empresa</a></li>
-            <li><a class="scroll" href="#diretrizes">Nossas Diretrizes</a></li>
-            <li><a class="scroll" href="#contato">Contato</a></li>
+            <li><a class="scroll" onclick="$('.button-collapse').sideNav('hide');" href="#">Home</a></li>
+            <li><a class="scroll" onclick="$('.button-collapse').sideNav('hide');" href="#portfolio">Soluções e Serviços</a></li>
+            <li><a class="scroll" onclick="$('.button-collapse').sideNav('hide');" href="#antesDepois">Antes e Depois</a></li>
+            <li><a class="scroll" onclick="$('.button-collapse').sideNav('hide');" href="#empresa">A Empresa</a></li>
+            <li><a class="scroll" onclick="$('.button-collapse').sideNav('hide');" href="#diretrizes">Nossas Diretrizes</a></li>
+            <li><a class="scroll" onclick="$('.button-collapse').sideNav('hide');" href="#contato">Contato</a></li>
         </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <a href="#" data-activates="nav-mobile" id="side-nav-clear" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
 </nav>
 
-<div class="parallax-container valign-wrapper">
+<div class="parallax-container valign-wrapper" style="min-height: 220px">
     <div class="section no-pad-bot">
         <div class="container">
             <div class="row center">
@@ -86,7 +85,7 @@
             </div>
         </div>
     </div>
-    <div class="parallax"><img src="images/background/Home/background1.jpg" alt="MRV"></div>
+    <div class="parallax"><img src="images/background/Home/background4.jpg" alt="MRV"></div>
 </div>
 
 <div class="container" id="portfolio">
@@ -106,6 +105,13 @@
                                     Fachada
                                 </div>
                             </div>
+                            <div class="card-content">
+                                <ul class="left-align">
+                                    <li class="black-text">Fachada em (ACM)</li>
+                                    <li class="black-text">Fachada em aço galvanizado</li>
+                                    <li class="black-text">Projetos especiais</li>
+                                </ul>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -119,6 +125,13 @@
                                     Letra Caixa
                                 </div>
                             </div>
+                            <div class="card-content">
+                                <ul class="left-align">
+                                    <li class="black-text">Letra Caixa em (ACM)</li>
+                                    <li class="black-text">Letra Caixa em aço galvanizado</li>
+                                    <li class="black-text">Projetos especiais</li>
+                                </ul>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -131,6 +144,13 @@
                                 <div class="card-title shadow">
                                     Placas
                                 </div>
+                            </div>
+                            <div class="card-content">
+                                <ul class="left-align">
+                                    <li class="black-text">Placas de sinalização</li>
+                                    <li class="black-text">Placas de vendas de imóveis</li>
+                                    <li class="black-text">Placas de identificação</li>
+                                </ul>
                             </div>
                         </div>
                     </a>
@@ -146,6 +166,15 @@
                                     Comunicação Interna
                                 </div>
                             </div>
+                            <div class="card-content">
+                                <ul class="left-align">
+                                    <li class="black-text">Banners</li>
+                                    <li class="black-text">Displays</li>
+                                    <li class="black-text">Totens</li>
+                                    <li class="black-text">Vitrines</li>
+                                    <li class="black-text">PDV</li>
+                                </ul>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -156,8 +185,17 @@
                             <div class="card-image">
                                 <img src="images/imagePortfolio/Placas/placa.gif" alt=" ">
                                 <div class="card-title shadow">
-                                    Comunicacao Externa
+                                    Comunicação Externa
                                 </div>
+                            </div>
+                            <div class="card-content">
+                                <ul class="left-align">
+                                    <li class="black-text">Adesivação de vitrine</li>
+                                    <li class="black-text">Outdoor</li>
+                                    <li class="black-text">Frontlight</li>
+                                    <li class="black-text">Backlight</li>
+                                    <li class="black-text">Empena</li>
+                                </ul>
                             </div>
                         </div>
                     </a>
@@ -172,6 +210,15 @@
                                 <div class="card-title shadow">
                                     Envelopamento
                                 </div>
+                            </div>
+                            <div class="card-content">
+                                <ul class="left-align">
+                                    <li class="black-text">Adesivação de Frota</li>
+                                    <li class="black-text">Envelopamento total</li>
+                                    <li class="black-text">Adesivos de recorte</li>
+                                    <li class="black-text">Veículo institucional</li>
+                                    <li class="black-text">Veículo propaganda</li>
+                                </ul>
                             </div>
                         </div>
                     </a>
@@ -190,7 +237,7 @@
             </div>
         </div>
     </div>
-    <div class="parallax"><img src="images/background/Home/background1.jpg" alt="MRV"></div>
+    <div class="parallax"><img src="images/background/Home/background5.jpg" alt="MRV"></div>
 </div>
 
 <div class="container" id="antesDepois">
@@ -201,16 +248,18 @@
                 <h4>Antes e Depois</h4>
                 <hr>
 
-                <div class="col s12 m4">
+                <div class="col s12 m4" style="margin-bottom: 15px">
                     <h4>Móveis São Geraldo - Betim</h4>
                     <p>Fachada em ACM cinza e vermelho com brise. Letra caixa em aço galvanizado pintado com tinta
                         automotiva.</p>
 
                     <a class="waves-effect waves-light btn head" href="cases">Veja mais!</a>
                 </div>
+
                 <div class="col s12 m8">
-                    <div class="twentytwenty-container"><img src="images/imageAntesDepois/6_1.jpg"/><img
-                            src="images/imageAntesDepois/6_2.jpg"/>
+                    <div class="twentytwenty-container">
+                        <img class="sliderW" src="images/imageAntesDepois/6_1.jpg"/>
+                        <img class="sliderW" src="images/imageAntesDepois/6_2.jpg"/>
                     </div>
                 </div>
             </div>
