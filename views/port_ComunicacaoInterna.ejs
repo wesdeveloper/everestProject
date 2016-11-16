@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Everest Portfolio | Comunicação Interna</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <TITLE>Everest Signs - Soluções em Comunicação</TITLE>
+    <META NAME="Author" CONTENT="Everest Signs - Soluções em Comunicação">
+    <META NAME="Description"
+          CONTENT="Temas ligados a comunicação visual, confecção de placas, adesivos de vinil, lonas impressas em tinta a base de solvente, tinta automotiva para letras em alumínio e aço, revitalização de fachadas com alumínio composto ACM, envelopamento de veículos, impressão em grandes formatos">
+    <META NAME="KeyWords"
+          CONTENT="lona, vinil, tinta, solvente, envelopamento, veículos, frota, adesivo, placas, comunicação visual, vinil de recorte, faca, ploter, criação de identidade visual, impressão em grandes formatos, scitex, roland, compact, recort">
+    <link href="http://www.everestsigns.com.br/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <META NAME="Generator" CONTENT="Microsoft Front Page">
+    <meta http-equiv="content-language" content="pt-br"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+    <meta http-equiv="imagetoolbar" content="no"/>
+    <meta name="rating" content="general"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="url" content="http://www.everestsigns.com.br"/>
+    <meta name="domain" content="http://www.everestsigns.com.br"/>
+    <meta name="title" content="Everest Signs - Soluções em Comunicação Visual - Gráfica e Serralheria"/>
+    <meta name="copyright" content="Everest Signs - Soluções em Comunicação"/>
+    <meta name="abstract"
+          content="Temas ligados a comunicação visual, confecção de placas, adesivos de vinil, lonas impressas em tinta a base de solvente, tinta automotiva para letras em alumínio e aço, revitalização de fachadas com alumínio composto ACM, envelopamento de veículos, impressão em grandes formatos,lona, vinil, tinta, solvente, envelopamento, veículos, frota, adesivo, placas, comunicação visual, vinil de recorte, faca, ploter, criação de identidade visual, impressão em grandes formatos, scitex, roland, compact, recort"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="../public/css/supersized.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="../public/css/supersized.shutter.css" type="text/css" media="screen"/>
+    <meta name='theme-color' content='#F9C636'/>
+    <style type="text/css">
+        ul#demo-block {
+            margin: 0;
+        }
+
+        ul#demo-block li {
+            margin: 0;
+            display: inline;
+            float: left;
+            clear: both;
+            width: 100%;
+            height: 208px;
+            color: #aaa;
+            font: 11px Helvetica, Arial, sans-serif;
+        }
+
+        ul#demo-block li a {
+            color: #eee;
+            font-weight: bold;
+        }
+
+        /*_________________________________*/
+        ul#demo-block1 {
+            margin: 0;
+        }
+
+        ul#demo-block1 li {
+            margin: 0;
+            display: inline;
+            float: right;
+            clear: both;
+            width: 141px;
+            height: 45px;
+            color: #aaa;
+            /*background:url('img/bg-black.png');*/
+            font: 11px Helvetica, Arial, sans-serif;
+        }
+
+        ul#demo-block1 li a {
+            color: #eee;
+            font-weight: bold;
+        }
+
+        /*_________________________________*/
+        ul#demo-block2 {
+            margin: 0;
+        }
+
+        ul#demo-block2 li {
+            margin: 5px 0 0 0;
+            display: inline;
+            float: left;
+            clear: both;
+            width: 140px;
+            height: 25px;
+            color: #aaa;
+            /*background:url('img/bg-black.png');*/
+            font: 11px Helvetica, Arial, sans-serif;
+        }
+
+        ul#demo-block2 li a {
+            color: #eee;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<ul id="demo-block">
+    <li>
+        <a href="http://www.everestsigns.com.br">
+            <img src="images/slideshow/logo_port.png"
+                 alt="Home"
+                width="184"
+                height="134"
+                style="float:left; margin-top:5px;"
+                title="Home"
+            />
+        </a>
+    </li>
+</ul>
+
+<!--Thumbnail Navigation-->
+<div id="prevthumb"></div>
+<div id="nextthumb"></div>
+
+<!--Arrow Navigation-->
+<a id="prevslide" class="load-item"></a>
+<a id="nextslide" class="load-item"></a>
+
+<div id="thumb-tray" class="load-item">
+    <div id="thumb-back"></div>
+    <div id="thumb-forward"></div>
+</div>
+
+<!--Time Bar-->
+<div id="progress-back" class="load-item">
+    <div id="progress-bar"></div>
+</div>
+
+<!--Control Bar-->
+<div id="controls-wrapper" class="load-item">
+    <div id="controls">
+
+        <a id="play-button"><img id="pauseplay" src="images/slideshow/pause.png"/></a>
+
+        <!--Slide counter-->
+        <div id="slidecounter">
+            <span class="slidenumber"></span> / <span class="totalslides"></span>
+        </div>
+
+        <!--Slide captions displayed here-->
+        <div id="slidecaption"></div>
+
+        <!--Thumb Tray button-->
+        <a id="tray-button"><img id="tray-arrow" src="images/slideshow/button-tray-up.png"/></a>
+
+        <!--Navigation-->
+        <ul id="slide-list"></ul>
+
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-38613461-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+
+</script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+<script type="text/javascript" src="js/supersized.shutter.min.js"></script>
+<script type="text/javascript">
+
+    jQuery(function ($) {
+
+        $.supersized({
+
+            // Functionality
+            slideshow: 1,			// Slideshow on/off
+            autoplay: 1,			// Slideshow starts playing automatically
+            start_slide: 1,			// Start slide (0 is random)
+            stop_loop: 0,			// Pauses slideshow on last slide
+            random: 0,			// Randomize slide order (Ignores start slide)
+            slide_interval: 3000,		// Length between transitions
+            transition: 6, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+            transition_speed: 1000,		// Speed of transition
+            new_window: 1,			// Image links open in new window/tab
+            pause_hover: 0,			// Pause slideshow on hover
+            keyboard_nav: 1,			// Keyboard navigation on/off
+            performance: 1,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+            image_protect: 1,			// Disables image dragging and right click with Javascript
+
+
+            min_width: 0,			// Min width allowed (in pixels)
+            min_height: 0,			// Min height allowed (in pixels)
+            vertical_center: 1,			// Vertically center background
+            horizontal_center: 1,			// Horizontally center background
+            fit_always: 0,			// Image will never exceed browser width or height (Ignores min. dimensions)
+            fit_portrait: 1,			// Portrait images will not exceed browser height
+            fit_landscape: 0,			// Landscape images will not exceed browser width
+
+            // Components
+            slide_links: 'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+            thumb_links: 1,			// Individual thumb links for each slide
+            thumbnail_navigation: 0,			// Thumbnail navigation
+            slides: [			// Slideshow Images
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/01.jpg',
+                    title: 'Frezzers Amora e mel - Adesivo impresso',
+                    thumb: ''
+                },
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/02.jpg',
+                    title: 'Frezzers Amora e mel - Adesivo impresso',
+                    thumb: ''
+                },
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/03.jpg',
+                    title: 'Decoração Sorveteria Amora e Mel - Adesivo impresso',
+                    thumb: ''
+                },
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/04.jpg',
+                    title: 'Decoração Sorveteria Salada - Adesivo impresso aplicado em PS',
+                    thumb: ''
+                },
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/05.jpg',
+                    title: 'Decoração Sorveteria Salada - Adesivo impresso aplicado em PS',
+                    thumb: ''
+                },
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/06.jpg',
+                    title: 'Decoração Sorveteria Salada - Adesivo impresso aplicado em PS',
+                    thumb: ''
+                },
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/07.jpg',
+                    title: 'Placa externa conceitual - Sorveteria Salada - Lona com ilhós armada em estrutura de metalon',
+                    thumb: ''
+                },
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/08.jpg',
+                    title: 'Comunicação interna - Adesivação de paineis decorativos',
+                    thumb: ''
+                },
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/09.jpg',
+                    title: 'Comunicação interna - Adesivação de paineis decorativos',
+                    thumb: ''
+                },
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/10.jpg',
+                    title: 'Comunicação interna - Adesivação de paineis decorativos',
+                    thumb: ''
+                },
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/11.jpg',
+                    title: 'Comunicação interna - Adesivação de paineis decorativos',
+                    thumb: ''
+                },
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/12.jpg',
+                    title: 'Comunicação interna - Adesivação de paineis decorativos',
+                    thumb: ''
+                },
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/13.jpg',
+                    title: 'Painéis internos MRV - Adesivo impresso',
+                    thumb: ''
+                },
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/14.jpg',
+                    title: 'Painéis internos MRV - Adesivo impresso aplicado em quadros de MDF',
+                    thumb: ''
+                },
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/15.jpg',
+                    title: 'Envelopamento estúdio Extra FM - Adesivo impresso',
+                    thumb: ''
+                },
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/16.jpg',
+                    title: 'Envelopamento estúdio Extra FM - Adesivo impresso',
+                    thumb: ''
+                },
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/17.jpg',
+                    title: 'Fachada Locadora de Livros - Adesivo impresso aplicado em PS',
+                    thumb: ''
+                },
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/18.jpg',
+                    title: 'Comunicação interna Locadora de Livros - Adesivo impresso e adesivo impresso aplicado em PS',
+                    thumb: ''
+                },
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/19.jpg',
+                    title: 'Vitrine loja Vide Bula - Adesivo impresso',
+                    thumb: ''
+                },
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/20.jpg',
+                    title: 'Decoração Tetra Pak - Adesivo de recorte',
+                    thumb: ''
+                },
+                {
+                    image: 'images/imagePortfolio/ComunicacaoInterna/21.jpg',
+                    title: 'Decoração Tetra Pak - Adesivo de recorte',
+                    thumb: ''
+                }
+            ],
+
+            // Theme Options
+            progress_bar: 1,			// Timer for each slide
+            mouse_scrub: 0
+
+        });
+    });
+
+</script>
+</body>
+</html>
