@@ -34,7 +34,7 @@ module.exports = function (app) {
         },
 
         Placas: function (req, res) {
-            res.render('port_Placas');
+            res.render('port_Placa');
         },
 
         LetraCaixa: function (req, res) {

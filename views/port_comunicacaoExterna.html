@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Everest Portfolio | Comunicação Interna</title>
+    <title>Everest | Portfolio | Comunicação Externa</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <META HTTP-EQUIV="pragma" CONTENT="no-cache">
     <TITLE>Everest Signs - Soluções em Comunicação</TITLE>
@@ -27,8 +27,13 @@
           content="Temas ligados a comunicação visual, confecção de placas, adesivos de vinil, lonas impressas em tinta a base de solvente, tinta automotiva para letras em alumínio e aço, revitalização de fachadas com alumínio composto ACM, envelopamento de veículos, impressão em grandes formatos,lona, vinil, tinta, solvente, envelopamento, veículos, frota, adesivo, placas, comunicação visual, vinil de recorte, faca, ploter, criação de identidade visual, impressão em grandes formatos, scitex, roland, compact, recort"/>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="css/supersized.shutter.css" type="text/css" media="screen"/>
+    <link href="../public/css/supersized.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="../public/css/supersized.shutter.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../public/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../public/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <meta name='theme-color' content='#F9C636'/>
     <style type="text/css">
         ul#demo-block {
@@ -98,18 +103,39 @@
 </head>
 
 <body>
+<ul id="dropdown1" class="dropdown-content">
+    <li><a class="grey-text" href="fachada">Fachada</a></li>
+    <li><a class="grey-text" href="letra-caixa">Letra Caixa</a></li>
+    <li><a class="grey-text" href="placa">Placa</a></li>
+    <li><a class="grey-text" href="comunicacao-interna">Comunicação Interna</a></li>
+    <li><a class="grey-text" href="comunicacao-externa">Comunicação Externa</a></li>
+    <li><a class="grey-text" href="envelopamento">Envelopamento de Frota</a></li>
+</ul>
+<nav class="head" id="home" role="navigation">
+    <div class="nav-wrapper container">
+        <ul class="hide-on-med-and-down">
+            <li><a class="white-text scroll" href="/">Home</a></li>
+            <li><a class="white-text scroll" href="fachada">Fachada</a></li>
+            <li><a class="white-text scroll" href="letra-caixa">Letra Caixa</a></li>
+            <li><a class="white-text scroll" href="placa">Placa</a></li>
+            <li><a class="white-text scroll" href="comunicacao-interna">Comunicação Interna</a></li>
+            <li><a class="white-text scroll" href="comunicacao-externa">Comunicação Externa</a></li>
+            <li><a class="white-text scroll" href="envelopamento">Envelopamento de Frota</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="show-on-medium-and-down hide-on-med-and-up">
+            <li><a class="white-text scroll" href="/">Home</a></li>
+            <li><a class="white-text dropdown-button" href="#!"
+                   data-activates="dropdown1">Portfólio
+                <i class="material-icons right">arrow_drop_down</i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
 <ul id="demo-block">
     <li>
-        <a href="/#portfolio">
-            <img src="images/slideshow/logo_port.png"
-                 alt="Home"
-                width="184"
-                height="134"
-                style="float:left; margin-top:5px;"
-                title="Home"
-            />
-        </a>
+        <img src="../public/images/imagePortfolio/ComunicacaoExterna/tit_externa.png" alt="Comunicação Externa" width="40" height="350" style="float:right;" title="Letra caixa"/>
     </li>
 </ul>
 
@@ -135,7 +161,7 @@
 <div id="controls-wrapper" class="load-item">
     <div id="controls">
 
-        <a id="play-button"><img id="pauseplay" src="images/slideshow/pause.png"/></a>
+        <a id="play-button"><img id="pauseplay" src="../public/images/slideshow/pause.png"/></a>
 
         <!--Slide counter-->
         <div id="slidecounter">
@@ -146,7 +172,7 @@
         <div id="slidecaption"></div>
 
         <!--Thumb Tray button-->
-        <a id="tray-button"><img id="tray-arrow" src="images/slideshow/button-tray-up.png"/></a>
+        <a id="tray-button"><img id="tray-arrow" src="../public/images/slideshow/button-tray-up.png"/></a>
 
         <!--Navigation-->
         <ul id="slide-list"></ul>
@@ -154,30 +180,14 @@
     </div>
 </div>
 
-
-<script type="text/javascript">
-
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-38613461-1', 'auto');
-    ga('require', 'displayfeatures');
-    ga('send', 'pageview');
-
-</script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.min.js"></script>
-<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
-<script type="text/javascript" src="js/supersized.shutter.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../public/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="../public/js/supersized.3.2.7.min.js"></script>
+<script type="text/javascript" src="../public/js/supersized.3.2.7.js"></script>
+<script type="text/javascript" src="../public/js/supersized.shutter.min.js"></script>
+<script src="../public/js/materialize.js"></script>
+<script src="../public/js/init.js"></script>
 <script type="text/javascript">
 
     jQuery(function ($) {
@@ -213,109 +223,45 @@
             thumb_links: 1,			// Individual thumb links for each slide
             thumbnail_navigation: 0,			// Thumbnail navigation
             slides: [			// Slideshow Images
+
                 {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/01.jpg',
-                    title: 'Frezzers Amora e mel - Adesivo impresso',
+                    image: '../public/images/imagePortfolio/ComunicacaoExterna/01.jpg',
+                    title: '',
                     thumb: ''
                 },
                 {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/02.jpg',
-                    title: 'Frezzers Amora e mel - Adesivo impresso',
+                    image: '../public/images/imagePortfolio/ComunicacaoExterna/02.jpg',
+                    title: '',
                     thumb: ''
                 },
                 {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/03.jpg',
-                    title: 'Decoração Sorveteria Amora e Mel - Adesivo impresso',
+                    image: '../public/images/imagePortfolio/ComunicacaoExterna/03.jpg',
+                    title: '',
                     thumb: ''
                 },
                 {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/04.jpg',
-                    title: 'Decoração Sorveteria Salada - Adesivo impresso aplicado em PS',
+                    image: '../public/images/imagePortfolio/ComunicacaoExterna/04.jpg',
+                    title: '',
                     thumb: ''
                 },
                 {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/05.jpg',
-                    title: 'Decoração Sorveteria Salada - Adesivo impresso aplicado em PS',
+                    image: '../public/images/imagePortfolio/ComunicacaoExterna/05.jpg',
+                    title: '',
                     thumb: ''
                 },
                 {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/06.jpg',
-                    title: 'Decoração Sorveteria Salada - Adesivo impresso aplicado em PS',
+                    image: '../public/images/imagePortfolio/ComunicacaoExterna/06.jpg',
+                    title: '',
                     thumb: ''
                 },
                 {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/07.jpg',
-                    title: 'Placa externa conceitual - Sorveteria Salada - Lona com ilhós armada em estrutura de metalon',
+                    image: '../public/images/imagePortfolio/ComunicacaoExterna/07.jpg',
+                    title: '',
                     thumb: ''
                 },
                 {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/08.jpg',
-                    title: 'Comunicação interna - Adesivação de paineis decorativos',
-                    thumb: ''
-                },
-                {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/09.jpg',
-                    title: 'Comunicação interna - Adesivação de paineis decorativos',
-                    thumb: ''
-                },
-                {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/10.jpg',
-                    title: 'Comunicação interna - Adesivação de paineis decorativos',
-                    thumb: ''
-                },
-                {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/11.jpg',
-                    title: 'Comunicação interna - Adesivação de paineis decorativos',
-                    thumb: ''
-                },
-                {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/12.jpg',
-                    title: 'Comunicação interna - Adesivação de paineis decorativos',
-                    thumb: ''
-                },
-                {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/13.jpg',
-                    title: 'Painéis internos MRV - Adesivo impresso',
-                    thumb: ''
-                },
-                {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/14.jpg',
-                    title: 'Painéis internos MRV - Adesivo impresso aplicado em quadros de MDF',
-                    thumb: ''
-                },
-                {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/15.jpg',
-                    title: 'Envelopamento estúdio Extra FM - Adesivo impresso',
-                    thumb: ''
-                },
-                {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/16.jpg',
-                    title: 'Envelopamento estúdio Extra FM - Adesivo impresso',
-                    thumb: ''
-                },
-                {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/17.jpg',
-                    title: 'Fachada Locadora de Livros - Adesivo impresso aplicado em PS',
-                    thumb: ''
-                },
-                {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/18.jpg',
-                    title: 'Comunicação interna Locadora de Livros - Adesivo impresso e adesivo impresso aplicado em PS',
-                    thumb: ''
-                },
-                {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/19.jpg',
-                    title: 'Vitrine loja Vide Bula - Adesivo impresso',
-                    thumb: ''
-                },
-                {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/20.jpg',
-                    title: 'Decoração Tetra Pak - Adesivo de recorte',
-                    thumb: ''
-                },
-                {
-                    image: 'images/imagePortfolio/ComunicacaoInterna/21.jpg',
-                    title: 'Decoração Tetra Pak - Adesivo de recorte',
+                    image: '../public/images/imagePortfolio/ComunicacaoExterna/08.jpg',
+                    title: '',
                     thumb: ''
                 }
             ],
