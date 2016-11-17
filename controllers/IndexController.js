@@ -1,42 +1,45 @@
-module.exports =  function (app) {
-  var indexController = {
-    //Route index
-    index: function (req, res) {
-      res.render('index');
-    },
+module.exports = function (app) {
+    var indexController = {
+        //Route index
+        index: function (req, res) {
+            res.render('index');
+        },
 
-    cases:function (req, res) {
-      res.render('antesDepois');
-    },
+        AntesDepois: function (req, res) {
+            res.render('antesDepois');
+        },
 
-    //Route portfolio
-    //portfolio: function (req, res) {
-     // res.render('portfolio');
-    //},
+        empresa: function (req, res) {
+            res.render('empresa');
+        },
 
-    ComunicacaoInterna: function (req, res) {
-      res.render('port_ComunicacaoInterna');
-    },
+        orcamento: function (req, res) {
+            res.render('orcamento');
+        },
 
-    ComunicacaoExterna: function (req, res) {
-      res.render('port_ComunicacaoExterna');
-    },
+        ComunicacaoInterna: function (req, res) {
+            res.render('port_ComunicacaoInterna');
+        },
 
-    Envelopamento: function (req, res) {
-      res.render('port_Envelopamento');
-    },
+        ComunicacaoExterna: function (req, res) {
+            res.render('port_ComunicacaoExterna');
+        },
 
-    Fachada: function (req, res) {
-      res.render('port_Fachada');
-    },
+        Envelopamento: function (req, res) {
+            res.render('port_Envelopamento');
+        },
 
-    Placas: function (req, res) {
-      res.render('port_Placas');
-    },
+        Fachada: function (req, res) {
+            res.render('port_Fachada');
+        },
 
-    LetraCaixa: function (req, res) {
-      res.render('port_LetraCaixa');
-    },
-  };
-  return indexController;
+        Placas: function (req, res) {
+            res.render('port_Placas');
+        },
+
+        LetraCaixa: function (req, res) {
+            res.render('port_LetraCaixa');
+        },
+    };
+    return indexController;
 };
